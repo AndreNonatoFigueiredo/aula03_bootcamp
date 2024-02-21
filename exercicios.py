@@ -4,25 +4,37 @@
 # Escreva um programa que verifique esses campos e imprima "Dados válidos" se ambos 
 # forem positivos ou "Dados inválidos" caso contrário.
 
-try:
-    preco = float(input("Digite o preço do produto: "))
-    qtd = int(input("Digite a quantidade de produtos: "))
-except ValueError:
-    print("Os valores digitados estão incorretos!")
-    exit()  
+# try:
+#     preco = float(input("Digite o preço do produto: "))
+#     qtd = int(input("Digite a quantidade de produtos: "))
+# except ValueError:
+#     print("Os valores digitados estão incorretos!")
+#     exit()  
 
-if preco < 1:
-    print("O preço do produto deve ter valor positivo!")
-elif qtd < 1:
-    print("A quantidade de produtos deve ter valor maior que zero!")
-else:
-    calc = preco * qtd
-    print(f"O valor total da compra é:", str(calc))
+# if preco < 1:
+#     print("O preço do produto deve ter valor positivo!")
+# elif qtd < 1:
+#     print("A quantidade de produtos deve ter valor maior que zero!")
+# else:
+#     calc = preco * qtd
+#     print(f"O valor total da compra é:", str(calc))
 
 ### Exercício 2: Classificação de Dados de Sensor
 # Imagine que você está trabalhando com dados de sensores IoT. 
 # Os dados incluem medições de temperatura. Você precisa classificar cada leitura 
 # como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
+# Temperatura < 18°C é 'Baixa'
+# Temperatura >= 18°C e <= 26°C é 'Normal'
+# Temperatura > 26°C é 'Alta'
+
+temperatura = 40
+
+if (temperatura < 18):
+    print("Baixa")
+elif 18 <= temperatura <= 26:
+    print("Normal")
+else:
+    print("Alta")
 
 ### Exercício 3: Filtragem de Logs por Severidade
 # Você está analisando logs de uma aplicação e precisa filtrar mensagens 
