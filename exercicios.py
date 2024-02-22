@@ -52,23 +52,30 @@
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
 
-import re 
+# import re 
 
-regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
-idade = 15
-email = 'andrenf@gmail'
+# regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
+# idade = 15
+# email = 'andrenf@gmail'
 
-if(re.fullmatch(regex, email)):
-    print("Valid Email")
+# if(re.fullmatch(regex, email)):
+#     print("Valid Email")
 
-else:
-    print("Invalid Email")
+# else:
+#     print("Invalid Email")
 
 ### Exercício 5: Detecção de Anomalias em Dados de Transações
 # Você está trabalhando em um sistema de detecção de fraude e precisa identificar 
 # transações suspeitas. Uma transação é considerada suspeita se o valor for superior 
 # a R$ 10.000 ou se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). 
 # Dada uma transação como `transacao = {'valor': 12000, 'hora': 20}`, verifique se ela é suspeita.
+
+transacao = {'valor': 9000, 'hora': 15}
+
+if transacao['valor'] <= 10000 or 9 >= transacao['hora'] <= 18:
+    print("Ok")
+else:
+    print("Não ok")
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
