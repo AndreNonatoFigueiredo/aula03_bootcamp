@@ -52,6 +52,9 @@ if log['level'] == 'ERROR':
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
 
+
+
+
 ### Exercício 5: Detecção de Anomalias em Dados de Transações
 # Você está trabalhando em um sistema de detecção de fraude e precisa identificar 
 # transações suspeitas. Uma transação é considerada suspeita se o valor for superior 
