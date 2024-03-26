@@ -70,15 +70,26 @@
 # a R$ 10.000 ou se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). 
 # Dada uma transação como `transacao = {'valor': 12000, 'hora': 20}`, verifique se ela é suspeita.
 
-transacao = {'valor': 9000, 'hora': 15}
+# transacao = {'valor': 9000, 'hora': 15}
 
-if transacao['valor'] <= 10000 or 9 >= transacao['hora'] <= 18:
-    print("Ok")
-else:
-    print("Não ok")
+# if transacao['valor'] <= 10000 or 9 >= transacao['hora'] <= 18:
+#     print("Ok")
+# else:
+#     print("Não ok")
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
+
+texto = "Existe um grande clube na cidade"
+palavras = texto.split()
+cont = {}
+
+for palavra in palavras:
+    if palavra in cont:
+        cont[palavra] += 1
+    else: 
+        cont[palavra] = 1
+print(cont)
 
 ### Exercício 7. Normalização de Dados
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
